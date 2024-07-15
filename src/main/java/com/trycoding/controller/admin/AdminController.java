@@ -1,4 +1,4 @@
-package com.trycoding.controller;
+package com.trycoding.controller.admin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,7 +21,7 @@ public class AdminController {
 	@GetMapping("/addCategory")
 	public String addCategory() {
 		
-		return  "/admin/add-category";
+		return  "redirect:/admin-category/";
 	}
 	@GetMapping("/viewProducts")
 	public String viewProducts() {
